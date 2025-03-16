@@ -16,14 +16,12 @@ export const changeText = () => {
   const tech = document.querySelectorAll(".tech");
   const figure = document.querySelectorAll("figure");
   const desc = document.querySelectorAll(".desc");
-  const body = document.getElementsByTagName("body");
 
   if (themeBtn.innerText === "☀") {
     themeBtn.innerText = "☾";
     logoACJ.style.filter = "invert(0)";
-    bgHero.style.backgroundImage = "url('../../public/bg-hero-gray.png')";
+    bgHero.style.backgroundImage = "url('/bg-hero-gray.png')";
     bgHero.style.boxShadow = "black 0 0 20px";
-    body.style.backgroundImage("url('./public/snow.png')");
     myBtn.forEach((boton) => {
       boton.style.backgroundColor = "#88f325";
       boton.style.color = "black";
@@ -47,9 +45,8 @@ export const changeText = () => {
   } else {
     themeBtn.innerText = "☀";
     logoACJ.style.filter = "invert(1)";
-    bgHero.style.backgroundImage = "url('../../public/bg-hero-black.png')";
+    bgHero.style.backgroundImage = "url('/bg-hero-black.png')";
     bgHero.style.boxShadow = "whitesmoke 0 0 20px";
-    body.style.backgroundImage("url('./public/xv.png')");
     myBtn.forEach((boton) => {
       boton.style.backgroundColor = "black";
       boton.style.color = "whitesmoke";
@@ -71,7 +68,7 @@ export const changeText = () => {
 export const Navbar = () => `
 <nav>
 <div id="logoACJ">
-  <img src="../../public/logo_arteConJota.png" alt="logo_arteConJota" id= "imgLogoACJ">
+  <img src="/logo_arteConJota.png" alt="logo_arteConJota" id= "imgLogoACJ">
 </div>
 <ul>
     <li>

@@ -6,7 +6,7 @@ export const Home = () => {
   cleanPage(main);
   main.innerHTML = `
     <section class="home">
-    <img src= "/public/name-hero.png" alt= "nameDeveloper" id= "name-hero">
+    <img src= "/name-hero.png" alt= "nameDeveloper" id= "name-hero">
     <h1>Software Developer | Full Stack | Designer | Photographer</h1>
     <p>
     Loving to creat websites, unleashing my imagination, and building sites where people
