@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*Fuentes: Rubik Glitch, Special Elite, Roboto, Italiana, Raleway*/
+
+:root {
+  --primary-dark: whitesmoke;
+  --bg-dark: black;
+  --primary-light: black;
+  --bg-light: gray;
+  --highlight: #88f325;
+  --divider: #88f325;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  background-image: url(./public/snow.png);
+  background-size: 15%;
+  color: var(--primary-dark);
+  transition: all 0.5s ease-in-out;
+}
+
+.light {
+  background-color: var(--bg-light);
+  color: var(--primary-light);
+}
+
+main {
+  background-image: url(./public/bg-hero-black.png);
+  background-size: cover;
+  box-shadow: whitesmoke 0 0 20px;
+  min-height: 80vh;
+  margin-bottom: 3.5rem;
+}
+
+a,
+p {
+  font-size: 1.1rem;
+}

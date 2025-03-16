@@ -1,0 +1,56 @@
+.home {
+    padding: 0 8rem;
+    padding-left: 10rem;
+    margin-bottom: 3.5rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  @media (max-width: 700px) {
+    .home {
+      padding: 0 2rem;
+    }
+  }
+  
+  h1 {
+    font-size: 1.3rem;
+    background: #73d701;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 5px 5px 3px);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -2rem;
+  }
+  
+  .home > a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 10px;
+    border: solid whitesmoke 1px;
+    border-radius: 0.3rem;
+  }
+
+  .home > a:hover {
+    box-shadow: #73d701 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .home > p {
+    display: flex;
+    justify-self: flex-start;
+    font-size: 0.9rem;
+  }
+
+  #name-hero {
+    align-self: end;
+    margin-bottom: 1rem;
+    width: 35rem;
+    height: auto;
+    filter: drop-shadow(3px 3px 15px rgba(27, 27, 27, 0.778));
+  }
