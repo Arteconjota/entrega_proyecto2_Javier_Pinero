@@ -16,6 +16,7 @@ export const changeText = () => {
   const tech = document.querySelectorAll(".tech");
   const figure = document.querySelectorAll("figure");
   const desc = document.querySelectorAll(".desc");
+  const header = document.querySelectorAll(".header");
 
   if (themeBtn.innerText === "☀") {
     themeBtn.innerText = "☾";
@@ -32,6 +33,9 @@ export const changeText = () => {
       boton.addEventListener("mouseleave", () => {
         boton.style.boxShadow = "";
       });
+    header.forEach((he) => {
+      he.style.color = "black";
+    });
     tech.forEach((nombre) => {
       nombre.style.color = "whitesmoke";
     });
@@ -51,6 +55,9 @@ export const changeText = () => {
       boton.style.backgroundColor = "black";
       boton.style.color = "whitesmoke";
       boton.style.border = "1px solid whitesmoke";
+    });
+    header.forEach((he) => {
+      he.style.color = "var(--divider)";
     });
     tech.forEach((nombre) => {
       nombre.style.color = "black";
